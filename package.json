@@ -58,6 +58,10 @@
             {
               "command": "Mathpad.disable",
               "title": "Mathpad: Disable"
+            },
+            {
+                "command": "Mathpad.replace",
+                "title": "Mathpad: Replace"
             }
         ]
     },

@@ -14,4 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
         config.update('enabled', false, vscode.ConfigurationTarget.Global);
         setTimeout(() => {decorator.renderAll();}, 1000);
     }));
+    context.subscriptions.push(vscode.commands.registerCommand('Mathpad.replace', () => {
+        decorator.renderSelection();
+    }));
 }
