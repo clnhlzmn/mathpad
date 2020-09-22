@@ -3,7 +3,7 @@
     "displayName": "Mathpad",
     "description": "Interactive scratchpad calculator.",
     "publisher": "sagebind",
-    "version": "0.0.2",
+    "version": "0.0.3-clnhlzmn",
     "license": "MIT",
     "engines": {
         "vscode": "^1.44.0"
@@ -75,7 +75,7 @@
     "dependencies": {
         "@types/mathjs": "^6.0.5",
         "axios": "^0.19.2",
-        "mathjs": "^6.6.4"
+        "mathjs": "file:../mathjs"
     },
     "devDependencies": {
         "@types/vscode": "^1.44.0",
