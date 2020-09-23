@@ -1,9 +1,9 @@
 {
     "name": "mathpad",
     "displayName": "Mathpad",
-    "description": "Interactive scratchpad calculator.",
-    "publisher": "sagebind",
-    "version": "0.0.3-clnhlzmn",
+    "description": "Interactive scratchpad calculator. Fork of sagebind/mathpad",
+    "publisher": "clnhlzmn",
+    "version": "0.0.4-clnhlzmn",
     "license": "MIT",
     "engines": {
         "vscode": "^1.44.0"
@@ -16,13 +16,13 @@
     "categories": [
         "Other"
     ],
-    "homepage": "https://github.com/sagebind/mathpad",
+    "homepage": "https://github.com/clnhlzmn/mathpad",
     "repository": {
         "type": "git",
-        "url": "https://github.com/sagebind/mathpad.git"
+        "url": "https://github.com/clnhlzmn/mathpad.git"
     },
     "bugs": {
-        "url": "https://github.com/sagebind/mathpad/issues"
+        "url": "https://github.com/clnhlzmn/mathpad/issues"
     },
     "extensionKind": [
         "ui",
@@ -52,12 +52,12 @@
         },
         "commands": [
             {
-              "command": "Mathpad.enable",
-              "title": "Mathpad: Enable"
+                "command": "Mathpad.enable",
+                "title": "Mathpad: Enable"
             },
             {
-              "command": "Mathpad.disable",
-              "title": "Mathpad: Disable"
+                "command": "Mathpad.disable",
+                "title": "Mathpad: Disable"
             },
             {
                 "command": "Mathpad.replace",

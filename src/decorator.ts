@@ -21,8 +21,7 @@ import * as path from 'path';
 const decorationType = window.createTextEditorDecorationType({
     after: {
         color: new ThemeColor("editorCodeLens.foreground"),
-        fontStyle: "normal",
-        margin: "0 0 0 24em",
+        fontStyle: "normal"
     },
     isWholeLine: true,
     rangeBehavior: DecorationRangeBehavior.ClosedClosed,
@@ -122,8 +121,7 @@ export default class EditorDecorator implements Disposable {
                     range: document.document.lineAt(lineNumber).range,
                     renderOptions: {
                         after: {
-                            contentText: ` = ${this.format(value)}`,
-                            margin: "0 0 0 24em"
+                            contentText: ` = ${this.format(value)}`
                         }
                     }
                 });
