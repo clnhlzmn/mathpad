@@ -3,7 +3,7 @@
     "displayName": "Mathpad",
     "description": "Interactive scratchpad calculator. Fork of sagebind/mathpad",
     "publisher": "clnhlzmn",
-    "version": "0.0.6-clnhlzmn",
+    "version": "0.0.7-clnhlzmn",
     "license": "MIT",
     "engines": {
         "vscode": "^1.51.0"
