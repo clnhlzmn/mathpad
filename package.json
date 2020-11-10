@@ -3,10 +3,10 @@
     "displayName": "Mathpad",
     "description": "Interactive scratchpad calculator. Fork of sagebind/mathpad",
     "publisher": "clnhlzmn",
-    "version": "0.0.5-clnhlzmn",
+    "version": "0.0.6-clnhlzmn",
     "license": "MIT",
     "engines": {
-        "vscode": "^1.44.0"
+        "vscode": "^1.51.0"
     },
     "keywords": [
         "calc",
@@ -73,21 +73,21 @@
         "pretest": "npm run compile && npm run lint"
     },
     "dependencies": {
-        "@types/mathjs": "^6.0.5",
+        "@types/mathjs": "^6.0.7",
         "axios": "^0.19.2",
-        "mathjs": "^7.3.0"
+        "mathjs": "../mathjs"
     },
     "devDependencies": {
-        "@types/vscode": "^1.44.0",
-        "@types/glob": "^7.1.1",
+        "@types/glob": "^7.1.3",
         "@types/mocha": "^7.0.2",
-        "@types/node": "^13.11.0",
+        "@types/node": "^13.13.30",
+        "@types/vscode": "^1.51.0",
+        "@typescript-eslint/eslint-plugin": "^2.34.0",
+        "@typescript-eslint/parser": "^2.34.0",
         "eslint": "^6.8.0",
-        "@typescript-eslint/parser": "^2.30.0",
-        "@typescript-eslint/eslint-plugin": "^2.30.0",
         "glob": "^7.1.6",
-        "mocha": "^7.1.2",
-        "typescript": "^3.8.3",
-        "vscode-test": "^1.3.0"
+        "mocha": "^7.2.0",
+        "typescript": "^3.9.7",
+        "vscode-test": "^1.4.1"
     }
 }
