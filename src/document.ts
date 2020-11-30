@@ -29,20 +29,19 @@ export default class MathDocument {
 
             if (!line.isEmptyOrWhitespace) {
                 const trimmed = line.text.trim();
-                const compiled = this.compile(trimmed);
-
-                if (compiled) {
-                    try {
+                try {
+                    const compiled = this.compile(trimmed);
+                    if (compiled) {
                         const result = compiled.evaluate(this.scope);
                         this.scope["last"] = result;
-
+    
                         // Only display value results.
                         if (typeof result !== "function" && typeof result !== "undefined") {
                             this.results.set(lineNumber, result);
                         }
-                    } catch (error) {
-                        // console.log(error);
                     }
+                } catch (error) {
+                    this.results.set(lineNumber, error.toString());
                 }
             }
         }
@@ -57,13 +56,8 @@ export default class MathDocument {
         let compiled = this.compileCache.get(text);
 
         if (!compiled) {
-            try {
-                compiled = this.math.compile(text);
-                this.compileCache.set(text, compiled);
-            } catch (error) {
-                // console.log(error);
-                return null;
-            }
+            compiled = this.math.compile(text);
+            this.compileCache.set(text, compiled);
         }
 
         return compiled;
