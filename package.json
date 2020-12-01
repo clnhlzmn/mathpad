@@ -1,93 +1,95 @@
 {
-    "name": "mathpad",
-    "displayName": "Mathpad",
-    "description": "Interactive scratchpad calculator. Fork of sagebind/mathpad",
-    "publisher": "clnhlzmn",
-    "version": "0.0.7-clnhlzmn",
-    "license": "MIT",
-    "engines": {
-        "vscode": "^1.51.0"
-    },
-    "keywords": [
-        "calc",
-        "calculator",
-        "math"
-    ],
-    "categories": [
-        "Other"
-    ],
-    "homepage": "https://github.com/clnhlzmn/mathpad",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/clnhlzmn/mathpad.git"
-    },
-    "bugs": {
-        "url": "https://github.com/clnhlzmn/mathpad/issues"
-    },
-    "extensionKind": [
-        "ui",
-        "workspace"
-    ],
-    "activationEvents": [
-        "onStartupFinished"
-    ],
-    "main": "./out/extension.js",
-    "contributes": {
-        "configuration": {
-            "title": "Mathpad",
-            "properties": {
-                "Mathpad.filePatterns": {
-                    "type": "array",
-                    "default": [
-                        ".*\\.md"
-                    ],
-                    "description": "File name patterns (regular expressions) for which to run Mathpad"
-                },
-                "Mathpad.enabled": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Enable Mathpad"
-                }
-            }
+  "name": "mathpad",
+  "displayName": "Mathpad",
+  "description": "Interactive scratchpad calculator. Fork of sagebind/mathpad",
+  "publisher": "clnhlzmn",
+  "version": "0.0.8-clnhlzmn",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "keywords": [
+    "calc",
+    "calculator",
+    "math"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "homepage": "https://github.com/clnhlzmn/mathpad",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clnhlzmn/mathpad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clnhlzmn/mathpad/issues"
+  },
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Mathpad",
+      "properties": {
+        "Mathpad.filePatterns": {
+          "type": "array",
+          "default": [
+            ".*\\.md"
+          ],
+          "description": "File name patterns (regular expressions) for which to run Mathpad"
         },
-        "commands": [
-            {
-                "command": "Mathpad.enable",
-                "title": "Mathpad: Enable"
-            },
-            {
-                "command": "Mathpad.disable",
-                "title": "Mathpad: Disable"
-            },
-            {
-                "command": "Mathpad.replace",
-                "title": "Mathpad: Replace"
-            }
-        ]
+        "Mathpad.enabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable Mathpad"
+        }
+      }
     },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "lint": "eslint src --ext ts",
-        "watch": "tsc -watch -p ./",
-        "pretest": "npm run compile && npm run lint"
-    },
-    "dependencies": {
-        "@types/mathjs": "^6.0.7",
-        "axios": "^0.19.2",
-        "mathjs": "../mathjs"
-    },
-    "devDependencies": {
-        "@types/glob": "^7.1.3",
-        "@types/mocha": "^7.0.2",
-        "@types/node": "^13.13.30",
-        "@types/vscode": "^1.51.0",
-        "@typescript-eslint/eslint-plugin": "^2.34.0",
-        "@typescript-eslint/parser": "^2.34.0",
-        "eslint": "^6.8.0",
-        "glob": "^7.1.6",
-        "mocha": "^7.2.0",
-        "typescript": "^3.9.7",
-        "vscode-test": "^1.4.1"
-    }
+    "commands": [
+      {
+        "command": "Mathpad.enable",
+        "title": "Mathpad: Enable"
+      },
+      {
+        "command": "Mathpad.disable",
+        "title": "Mathpad: Disable"
+      },
+      {
+        "command": "Mathpad.replace",
+        "title": "Mathpad: Replace"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint"
+  },
+  "dependencies": {
+    "@types/mathjs": "^6.0.7",
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.30",
+    "@types/vscode": "^1.51.0",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.8.0",
+    "glob": "^7.1.6",
+    "mocha": "^7.2.0",
+    "typescript": "^3.9.7",
+    "vscode-test": "^1.4.1"
+  },
+  "localDependencies": {
+    "mathjs": "../mathjs"
+  }
 }
