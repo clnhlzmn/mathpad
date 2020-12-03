@@ -74,7 +74,8 @@
   },
   "dependencies": {
     "@types/mathjs": "^6.0.7",
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "mathjs": "file:../mathjs/mathjs-8.0.1.tgz"
   },
   "devDependencies": {
     "@types/glob": "^7.1.3",
@@ -88,8 +89,5 @@
     "mocha": "^7.2.0",
     "typescript": "^3.9.7",
     "vscode-test": "^1.4.1"
-  },
-  "localDependencies": {
-    "mathjs": "../mathjs"
   }
 }
